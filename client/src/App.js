@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.css';
 import M from 'materialize-css';
 import './App.css';
@@ -36,7 +36,7 @@ const App = () => {
             <ReviewState>
               <Navbar />
               <Router>
-                <Switch>
+                <Routes>
                   <Route exact path='/' component={Landing} />
                   <Route exact path='/signup' component={SignUp} />
                   <Route exact path='/signin' component={SignIn} />
@@ -44,7 +44,7 @@ const App = () => {
                   <Route exact path='/profile' component={Profile} />
                   <Route exact path='/consumer' component={Consumer} />
                   <Route exact path='/producer' component={Producer} />
-                </Switch>
+                </Routes>
               </Router>
             </ReviewState>
           </FeedbackState>

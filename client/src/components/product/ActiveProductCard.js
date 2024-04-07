@@ -2,7 +2,7 @@ import React, { Fragment, useContext, useEffect } from 'react';
 import ProductContext from '../../context/product/productContext';
 import M from 'materialize-css';
 
-import Timer from 'react-compound-timer';
+import {Timer} from 'react-compound-timer';
 const ActiveProductCard = ({ product }) => {
   useEffect(() => {
     M.AutoInit();
@@ -126,4 +126,4 @@ const ActiveProductCard = ({ product }) => {
   );
 };
 
-export default translate('translations')(ActiveProductCard);
+export default (ActiveProductCard);

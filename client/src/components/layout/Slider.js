@@ -1,12 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {
+import SwiperCore from 'swiper';
+import {
   Navigation,
   Pagination,
   Controller,
   Thumbs,
   Autoplay,
-} from 'swiper';
+} from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs, Autoplay]);
